@@ -17,5 +17,10 @@ public class Message {
     private int id;
 
     @ManyToOne
+    private MyUser sender;
+
+    private String text;
+
+    @ManyToOne
     private Conversation conversation;
 }
