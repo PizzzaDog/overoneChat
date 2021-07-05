@@ -9,7 +9,4 @@ import java.util.List;
 public class Conversation {
     @Id
     private int id;
-
-//    @OneToMany
-//    private List<MyUser> users;
 }
