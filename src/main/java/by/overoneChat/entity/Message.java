@@ -16,9 +16,6 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
-    @ManyToOne
-    private MyUser sender;
-
     private String text;
 
     @ManyToOne

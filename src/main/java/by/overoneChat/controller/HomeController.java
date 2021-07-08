@@ -15,8 +15,8 @@ public class HomeController {
     private final MyUserService userService;
 
     @GetMapping()
-    public ModelAndView homePage(ModelAndView model, @RequestParam(defaultValue = "User") String name) {
-        model.addObject("name", name);
+    public ModelAndView homePage(ModelAndView model, @RequestParam(defaultValue = "User") String username) {
+        model.addObject("username", username);
         model.setViewName("home");
         return model;
     }
