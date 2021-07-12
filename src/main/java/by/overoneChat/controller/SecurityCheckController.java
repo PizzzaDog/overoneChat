@@ -10,7 +10,7 @@ public class SecurityCheckController {
 
     @GetMapping("/sec")
     //Аннотация разрешает доступ только тем, у кого есть роль ROLE_USER
-    @PreAuthorize("hasRole('ROLE_USER')")
+    @PreAuthorize("hasRole('USER')")
     public ModelAndView user(ModelAndView model) {
         model.setViewName("sec");
         return model;
@@ -18,7 +18,7 @@ public class SecurityCheckController {
 
     @GetMapping("/adm")
     //Аннотация разрешает доступ только тем, у кого есть роль ROLE_ADMIN
-    @PreAuthorize("hasRole('ROLE_ADMIN')")
+    @PreAuthorize("hasRole('ADMIN')")
     public ModelAndView admin(ModelAndView model) {
         model.setViewName("adm");
         return model;
