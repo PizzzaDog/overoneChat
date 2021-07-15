@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      validCheckSum: ANY
+      id: first_update
+      author: me
+      preConditions:
+        - onFail: HALT
+      changes:
+        - sqlFile:
+            dbms: mysql
+            encoding: utf8
+            path: db/sql/first_update.sql

@@ -31,6 +31,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .disable()
                 .authorizeRequests()
                 .antMatchers("/home").permitAll()
+                .antMatchers("/**").permitAll()
                 .antMatchers("/user/**").permitAll()
                 .antMatchers().hasRole("")
                 //Все остальные страницы требуют аутентификации

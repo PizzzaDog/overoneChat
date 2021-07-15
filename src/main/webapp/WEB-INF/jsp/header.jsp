@@ -18,6 +18,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contacts">Contacts</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="personalInfo">Personal info</a>
+                </li>
+            </ul>
             </ul>
             <a class="navbar-brand" href="/anon/chat">Anon chat</a>
             <form class="d-flex">
